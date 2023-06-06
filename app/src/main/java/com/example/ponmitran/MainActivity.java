@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         login = findViewById(R.id.login);
 
         login.setOnClickListener(view -> {
-            Intent i = new Intent(MainActivity.this,menu1.class);
+            Intent i = new Intent(MainActivity.this, menu2.class);
             startActivity(i);
 
         });

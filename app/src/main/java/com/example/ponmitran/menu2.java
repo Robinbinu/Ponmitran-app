@@ -2,6 +2,7 @@ package com.example.ponmitran;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.ImageButton;
@@ -27,6 +28,9 @@ public class menu2 extends AppCompatActivity {
 
         cow.setOnClickListener(view -> {
             cowmp.start();
+            Intent i = new Intent(getApplicationContext(), menu1.class);
+            startActivity(i);
+
         });
         buffalo.setOnClickListener(view -> {
             bufmp.start();

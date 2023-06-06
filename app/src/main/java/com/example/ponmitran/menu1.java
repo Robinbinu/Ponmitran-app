@@ -20,5 +20,11 @@ public class menu1 extends AppCompatActivity {
             startActivity(i);
         });
 
+        ImageButton fyr = findViewById(R.id.fyr_button);
+        fyr.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(),Formulate.class);
+            startActivity(i);
+        });
+
     }
 }
